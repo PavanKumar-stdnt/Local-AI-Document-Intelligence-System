@@ -1,0 +1,334 @@
+2026-04-16 13:45:08 | INFO     | __main__:60 — ==================================================
+2026-04-16 13:45:08 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-16 13:45:09 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-16 13:45:09 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-16 13:45:09 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-16 13:45:09 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-16 13:45:09 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-16 13:45:09 | INFO     | src.vector_store:74 — Creating new ChromaDB collection with 6 chunk(s).
+2026-04-16 13:45:27 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-16 13:45:27 | INFO     | __main__:75 — ==================================================
+2026-04-16 13:45:27 | INFO     | __main__:76 — Ingestion complete!
+2026-04-16 13:45:27 | INFO     | __main__:77 —   Documents loaded : 1
+2026-04-16 13:45:27 | INFO     | __main__:78 —   Chunks stored    : 6
+2026-04-16 13:45:27 | INFO     | __main__:79 —   Next step        : streamlit run app.py
+2026-04-16 13:45:27 | INFO     | __main__:80 — ==================================================
+2026-04-16 13:46:47 | INFO     | src.vector_store:106 — Loaded ChromaDB with 6 stored chunk(s).
+2026-04-16 13:46:47 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-16 13:46:48 | INFO     | src.chain:53 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-16 13:46:48 | INFO     | src.chain:81 — ConversationalRetrievalChain is ready.
+2026-04-16 13:53:14 | DEBUG    | src.document_loader:116 —   Loaded 'Machine Learning Capstone Project – Data Science.pdf' → 27 section(s).
+2026-04-16 13:53:14 | INFO     | src.text_splitter:57 — Split 27 document(s) into 34 chunks (size≈500, overlap=100).
+2026-04-16 13:53:16 | INFO     | src.vector_store:66 — ChromaDB exists — appending 34 new chunk(s).
+2026-04-16 13:53:30 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-16 13:53:32 | INFO     | src.vector_store:106 — Loaded ChromaDB with 40 stored chunk(s).
+2026-04-16 13:53:32 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-16 13:53:34 | INFO     | src.chain:53 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-16 13:53:34 | INFO     | src.chain:81 — ConversationalRetrievalChain is ready.
+2026-04-16 13:54:11 | DEBUG    | src.chain:113 — Q: 'What are the key points in the documents?' → 4 chunks, sources=['Machine Learning Capstone Project – Data Science.pdf']
+2026-04-16 13:55:01 | DEBUG    | src.chain:113 — Q: 'what is the main project in the pdf' → 4 chunks, sources=['Machine Learning Capstone Project – Data Science.pdf']
+2026-04-16 13:56:21 | DEBUG    | src.chain:113 — Q: 'tell what your insights about the pdf' → 4 chunks, sources=['Machine Learning Capstone Project – Data Science.pdf', 'sample_document.txt']
+2026-04-16 13:56:51 | INFO     | src.vector_store:106 — Loaded ChromaDB with 40 stored chunk(s).
+2026-04-16 13:56:51 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-16 13:56:52 | INFO     | src.chain:53 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-16 13:56:52 | INFO     | src.chain:81 — ConversationalRetrievalChain is ready.
+2026-04-16 13:57:04 | INFO     | src.vector_store:106 — Loaded ChromaDB with 40 stored chunk(s).
+2026-04-16 13:57:04 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-16 13:57:06 | INFO     | src.chain:53 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-16 13:57:06 | INFO     | src.chain:81 — ConversationalRetrievalChain is ready.
+2026-04-16 14:04:25 | DEBUG    | src.document_loader:116 —   Loaded 'SASOL Sustainability Report 2023 20-09_0.pdf' → 66 section(s).
+2026-04-16 14:04:25 | INFO     | src.text_splitter:57 — Split 66 document(s) into 750 chunks (size≈500, overlap=100).
+2026-04-16 14:04:28 | INFO     | src.vector_store:66 — ChromaDB exists — appending 750 new chunk(s).
+2026-04-16 14:04:51 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-16 14:04:54 | INFO     | src.vector_store:106 — Loaded ChromaDB with 790 stored chunk(s).
+2026-04-16 14:04:54 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-16 14:04:56 | INFO     | src.chain:53 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-16 14:04:56 | INFO     | src.chain:81 — ConversationalRetrievalChain is ready.
+2026-04-16 14:05:57 | DEBUG    | src.chain:113 — Q: 'What are the key points in the documents?' → 4 chunks, sources=['Machine Learning Capstone Project – Data Science.pdf', 'SASOL Sustainability Report 2023 20-09_0.pdf']
+2026-04-16 14:07:13 | DEBUG    | src.chain:113 — Q: 'what is there in the 45 page of this pdf' → 4 chunks, sources=['Machine Learning Capstone Project – Data Science.pdf']
+2026-04-16 14:07:51 | DEBUG    | src.chain:113 — Q: "why u don't have enough information" → 4 chunks, sources=['Machine Learning Capstone Project – Data Science.pdf']
+2026-04-16 14:09:41 | INFO     | src.vector_store:106 — Loaded ChromaDB with 790 stored chunk(s).
+2026-04-16 14:09:41 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-16 14:09:43 | INFO     | src.chain:53 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-16 14:09:43 | INFO     | src.chain:81 — ConversationalRetrievalChain is ready.
+2026-04-16 14:10:52 | DEBUG    | src.chain:113 — Q: 'what is the sustainability approach' → 4 chunks, sources=['SASOL Sustainability Report 2023 20-09_0.pdf']
+2026-04-16 14:12:09 | DEBUG    | src.chain:113 — Q: "women's football" → 4 chunks, sources=['SASOL Sustainability Report 2023 20-09_0.pdf']
+2026-04-16 14:14:15 | DEBUG    | src.chain:113 — Q: 'summarize the top 3 achievements mentioned in this report' → 4 chunks, sources=['SASOL Sustainability Report 2023 20-09_0.pdf']
+2026-04-17 15:14:17 | INFO     | __main__:60 — ==================================================
+2026-04-17 15:14:17 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-17 15:14:17 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-17 15:14:17 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-17 15:14:17 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-17 15:14:17 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-17 15:14:17 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-17 15:14:17 | INFO     | src.vector_store:66 — ChromaDB exists — appending 6 new chunk(s).
+2026-04-17 15:14:23 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-17 15:14:23 | INFO     | __main__:75 — ==================================================
+2026-04-17 15:14:23 | INFO     | __main__:76 — Ingestion complete!
+2026-04-17 15:14:23 | INFO     | __main__:77 —   Documents loaded : 1
+2026-04-17 15:14:23 | INFO     | __main__:78 —   Chunks stored    : 796
+2026-04-17 15:14:23 | INFO     | __main__:79 —   Next step        : streamlit run app.py
+2026-04-17 15:14:23 | INFO     | __main__:80 — ==================================================
+2026-04-17 15:14:41 | INFO     | src.vector_store:106 — Loaded ChromaDB with 796 stored chunk(s).
+2026-04-17 15:14:41 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-17 15:14:42 | INFO     | src.chain:53 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-17 15:14:42 | INFO     | src.chain:81 — ConversationalRetrievalChain is ready.
+2026-04-17 15:15:40 | DEBUG    | src.document_loader:116 —   Loaded '2022-Absa-Group-limited-Environmental-Social-and-Governance-Data-sheet.pdf' → 26 section(s).
+2026-04-17 15:15:40 | INFO     | src.text_splitter:57 — Split 26 document(s) into 107 chunks (size≈500, overlap=100).
+2026-04-17 15:15:41 | INFO     | src.vector_store:66 — ChromaDB exists — appending 107 new chunk(s).
+2026-04-17 15:15:44 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-17 15:15:45 | INFO     | src.vector_store:106 — Loaded ChromaDB with 903 stored chunk(s).
+2026-04-17 15:15:45 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-17 15:15:46 | INFO     | src.chain:53 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-17 15:15:46 | INFO     | src.chain:81 — ConversationalRetrievalChain is ready.
+2026-04-17 15:16:18 | DEBUG    | src.chain:113 — Q: 'what are 3 major achievements in this' → 4 chunks, sources=['Machine Learning Capstone Project – Data Science.pdf', 'SASOL Sustainability Report 2023 20-09_0.pdf']
+2026-04-17 15:17:23 | DEBUG    | src.chain:113 — Q: 'absa top 10' → 4 chunks, sources=['Machine Learning Capstone Project – Data Science.pdf', 'SASOL Sustainability Report 2023 20-09_0.pdf']
+2026-04-17 15:18:01 | DEBUG    | src.chain:113 — Q: 'geographical split' → 4 chunks, sources=['2022-Absa-Group-limited-Environmental-Social-and-Governance-Data-sheet.pdf', 'Machine Learning Capstone Project – Data Science.pdf', 'SASOL Sustainability Report 2023 20-09_0.pdf']
+2026-04-17 15:18:56 | DEBUG    | src.chain:113 — Q: 'top 10 share holders' → 4 chunks, sources=['2022-Absa-Group-limited-Environmental-Social-and-Governance-Data-sheet.pdf', 'SASOL Sustainability Report 2023 20-09_0.pdf']
+2026-04-17 15:19:37 | DEBUG    | src.chain:113 — Q: 'External learning programmes' → 4 chunks, sources=['2022-Absa-Group-limited-Environmental-Social-and-Governance-Data-sheet.pdf', 'SASOL Sustainability Report 2023 20-09_0.pdf']
+2026-04-17 15:20:17 | DEBUG    | src.chain:113 — Q: 'thank you' → 4 chunks, sources=['Machine Learning Capstone Project – Data Science.pdf']
+2026-04-17 15:20:40 | INFO     | src.vector_store:106 — Loaded ChromaDB with 903 stored chunk(s).
+2026-04-17 15:20:40 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-17 15:20:41 | INFO     | src.chain:53 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-17 15:20:41 | INFO     | src.chain:81 — ConversationalRetrievalChain is ready.
+2026-04-17 15:20:50 | INFO     | src.vector_store:106 — Loaded ChromaDB with 903 stored chunk(s).
+2026-04-17 15:20:50 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-17 15:20:51 | INFO     | src.chain:53 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-17 15:20:51 | INFO     | src.chain:81 — ConversationalRetrievalChain is ready.
+2026-04-20 09:52:59 | INFO     | __main__:60 — ==================================================
+2026-04-20 09:52:59 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-20 09:52:59 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-20 09:52:59 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-20 09:52:59 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-20 09:52:59 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-20 09:52:59 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-20 09:52:59 | INFO     | src.vector_store:66 — ChromaDB exists — appending 6 new chunk(s).
+2026-04-20 09:54:14 | INFO     | src.vector_store:106 — Loaded ChromaDB with 903 stored chunk(s).
+2026-04-20 09:54:14 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-20 09:54:15 | INFO     | src.chain:53 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-20 09:54:15 | INFO     | src.chain:81 — ConversationalRetrievalChain is ready.
+2026-04-20 10:04:59 | INFO     | __main__:60 — ==================================================
+2026-04-20 10:04:59 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-20 10:04:59 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-20 10:04:59 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-20 10:04:59 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-20 10:04:59 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-20 10:04:59 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-20 10:04:59 | INFO     | src.vector_store:66 — ChromaDB exists — appending 6 new chunk(s).
+2026-04-20 10:05:04 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 10:05:04 | INFO     | __main__:75 — ==================================================
+2026-04-20 10:05:04 | INFO     | __main__:76 — Ingestion complete!
+2026-04-20 10:05:04 | INFO     | __main__:77 —   Documents loaded : 1
+2026-04-20 10:05:04 | INFO     | __main__:78 —   Chunks stored    : 909
+2026-04-20 10:05:04 | INFO     | __main__:79 —   Next step        : streamlit run app.py
+2026-04-20 10:05:04 | INFO     | __main__:80 — ==================================================
+2026-04-20 10:40:40 | INFO     | __main__:60 — ==================================================
+2026-04-20 10:40:40 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-20 10:40:40 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-20 10:40:40 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-20 10:40:40 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-20 10:40:40 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-20 10:40:40 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-20 10:40:41 | INFO     | src.vector_store:66 — ChromaDB exists — appending 6 new chunk(s).
+2026-04-20 10:40:48 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 10:40:48 | INFO     | __main__:75 — ==================================================
+2026-04-20 10:40:48 | INFO     | __main__:76 — Ingestion complete!
+2026-04-20 10:40:48 | INFO     | __main__:77 —   Documents loaded : 1
+2026-04-20 10:40:48 | INFO     | __main__:78 —   Chunks stored    : 915
+2026-04-20 10:40:48 | INFO     | __main__:79 —   Next step        : streamlit run app.py
+2026-04-20 10:40:48 | INFO     | __main__:80 — ==================================================
+2026-04-20 10:47:28 | INFO     | __main__:60 — ==================================================
+2026-04-20 10:47:28 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-20 10:47:28 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-20 10:47:28 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-20 10:47:28 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-20 10:47:28 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-20 10:47:28 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-20 10:47:28 | INFO     | src.vector_store:66 — ChromaDB exists — appending 6 new chunk(s).
+2026-04-20 10:47:33 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 10:47:33 | INFO     | __main__:75 — ==================================================
+2026-04-20 10:47:33 | INFO     | __main__:76 — Ingestion complete!
+2026-04-20 10:47:33 | INFO     | __main__:77 —   Documents loaded : 1
+2026-04-20 10:47:33 | INFO     | __main__:78 —   Chunks stored    : 921
+2026-04-20 10:47:33 | INFO     | __main__:79 —   Next step        : streamlit run app.py
+2026-04-20 10:47:33 | INFO     | __main__:80 — ==================================================
+2026-04-20 11:01:19 | INFO     | __main__:60 — ==================================================
+2026-04-20 11:01:19 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-20 11:01:19 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-20 11:01:19 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-20 11:01:19 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-20 11:01:19 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-20 11:01:19 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-20 11:01:19 | INFO     | src.vector_store:66 — ChromaDB exists — appending 6 new chunk(s).
+2026-04-20 11:01:24 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 11:01:24 | INFO     | __main__:75 — ==================================================
+2026-04-20 11:01:24 | INFO     | __main__:76 — Ingestion complete!
+2026-04-20 11:01:24 | INFO     | __main__:77 —   Documents loaded : 1
+2026-04-20 11:01:24 | INFO     | __main__:78 —   Chunks stored    : 927
+2026-04-20 11:01:24 | INFO     | __main__:79 —   Next step        : streamlit run app.py
+2026-04-20 11:01:24 | INFO     | __main__:80 — ==================================================
+2026-04-20 11:12:55 | INFO     | __main__:60 — ==================================================
+2026-04-20 11:12:55 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-20 11:12:55 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-20 11:12:55 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-20 11:12:55 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-20 11:12:55 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-20 11:12:55 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-20 11:12:56 | INFO     | src.vector_store:66 — ChromaDB exists — appending 6 new chunk(s).
+2026-04-20 11:13:01 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 11:13:01 | INFO     | __main__:75 — ==================================================
+2026-04-20 11:13:01 | INFO     | __main__:76 — Ingestion complete!
+2026-04-20 11:13:01 | INFO     | __main__:77 —   Documents loaded : 1
+2026-04-20 11:13:01 | INFO     | __main__:78 —   Chunks stored    : 933
+2026-04-20 11:13:01 | INFO     | __main__:79 —   Next step        : streamlit run app.py
+2026-04-20 11:13:01 | INFO     | __main__:80 — ==================================================
+2026-04-20 11:36:42 | INFO     | __main__:60 — ==================================================
+2026-04-20 11:36:42 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-20 11:36:42 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-20 11:36:42 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-20 11:36:42 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-20 11:36:42 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-20 11:36:42 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-20 11:36:43 | INFO     | src.vector_store:66 — ChromaDB exists — appending 6 new chunk(s).
+2026-04-20 11:36:47 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 11:36:47 | INFO     | __main__:75 — ==================================================
+2026-04-20 11:36:47 | INFO     | __main__:76 — Ingestion complete!
+2026-04-20 11:36:47 | INFO     | __main__:77 —   Documents loaded : 1
+2026-04-20 11:36:47 | INFO     | __main__:78 —   Chunks stored    : 939
+2026-04-20 11:36:47 | INFO     | __main__:79 —   Next step        : streamlit run app.py
+2026-04-20 11:36:47 | INFO     | __main__:80 — ==================================================
+2026-04-20 11:39:34 | INFO     | __main__:60 — ==================================================
+2026-04-20 11:39:34 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-20 11:39:34 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-20 11:39:34 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-20 11:39:34 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-20 11:39:34 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-20 11:39:34 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-20 11:39:34 | INFO     | src.vector_store:66 — ChromaDB exists — appending 6 new chunk(s).
+2026-04-20 11:39:38 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 11:39:38 | INFO     | __main__:75 — ==================================================
+2026-04-20 11:39:38 | INFO     | __main__:76 — Ingestion complete!
+2026-04-20 11:39:38 | INFO     | __main__:77 —   Documents loaded : 1
+2026-04-20 11:39:38 | INFO     | __main__:78 —   Chunks stored    : 945
+2026-04-20 11:39:38 | INFO     | __main__:79 —   Next step        : streamlit run app.py
+2026-04-20 11:39:38 | INFO     | __main__:80 — ==================================================
+2026-04-20 11:39:54 | INFO     | src.vector_store:106 — Loaded ChromaDB with 945 stored chunk(s).
+2026-04-20 11:39:54 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-20 11:39:54 | INFO     | src.chain:54 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-20 11:39:54 | INFO     | src.chain:82 — ConversationalRetrievalChain is ready.
+2026-04-20 11:40:19 | DEBUG    | src.document_loader:116 —   Loaded 'DISTELL ESG Appendix 2022.pdf' → 17 section(s).
+2026-04-20 11:40:19 | INFO     | src.text_splitter:57 — Split 17 document(s) into 96 chunks (size≈500, overlap=100).
+2026-04-20 11:40:20 | INFO     | src.vector_store:66 — ChromaDB exists — appending 96 new chunk(s).
+2026-04-20 11:40:28 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 11:40:31 | INFO     | src.vector_store:106 — Loaded ChromaDB with 1041 stored chunk(s).
+2026-04-20 11:40:31 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-20 11:40:33 | INFO     | src.chain:54 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-20 11:40:33 | INFO     | src.chain:82 — ConversationalRetrievalChain is ready.
+2026-04-20 11:41:53 | DEBUG    | src.chain:114 — Q: 'sasb standards index' → 4 chunks, sources=['SASOL Sustainability Report 2023 20-09_0.pdf']
+2026-04-20 11:42:20 | INFO     | src.vector_store:106 — Loaded ChromaDB with 1041 stored chunk(s).
+2026-04-20 11:42:20 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-20 11:42:21 | INFO     | src.chain:54 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-20 11:42:21 | INFO     | src.chain:82 — ConversationalRetrievalChain is ready.
+2026-04-20 11:47:45 | INFO     | __main__:60 — ==================================================
+2026-04-20 11:47:45 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-20 11:47:45 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-20 11:47:45 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-20 11:47:45 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-20 11:47:45 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-20 11:47:45 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-20 11:47:46 | INFO     | src.vector_store:74 — Creating new ChromaDB collection with 6 chunk(s).
+2026-04-20 11:47:50 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 11:47:50 | INFO     | __main__:75 — ==================================================
+2026-04-20 11:47:50 | INFO     | __main__:76 — Ingestion complete!
+2026-04-20 11:47:50 | INFO     | __main__:77 —   Documents loaded : 1
+2026-04-20 11:47:50 | INFO     | __main__:78 —   Chunks stored    : 6
+2026-04-20 11:47:50 | INFO     | __main__:79 —   Next step        : streamlit run app.py
+2026-04-20 11:47:50 | INFO     | __main__:80 — ==================================================
+2026-04-20 11:49:41 | INFO     | src.vector_store:106 — Loaded ChromaDB with 6 stored chunk(s).
+2026-04-20 11:49:41 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-20 11:49:43 | INFO     | src.chain:54 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-20 11:49:43 | INFO     | src.chain:82 — ConversationalRetrievalChain is ready.
+2026-04-20 11:49:56 | DEBUG    | src.document_loader:116 —   Loaded 'DISTELL ESG Appendix 2022.pdf' → 17 section(s).
+2026-04-20 11:49:56 | INFO     | src.text_splitter:57 — Split 17 document(s) into 96 chunks (size≈500, overlap=100).
+2026-04-20 11:49:58 | INFO     | src.vector_store:66 — ChromaDB exists — appending 96 new chunk(s).
+2026-04-20 11:50:03 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 11:50:05 | INFO     | src.vector_store:106 — Loaded ChromaDB with 102 stored chunk(s).
+2026-04-20 11:50:05 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-20 11:50:07 | INFO     | src.chain:54 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-20 11:50:07 | INFO     | src.chain:82 — ConversationalRetrievalChain is ready.
+2026-04-20 11:50:47 | DEBUG    | src.chain:114 — Q: 'human rights' → 4 chunks, sources=['DISTELL ESG Appendix 2022.pdf']
+2026-04-20 11:57:27 | INFO     | __main__:60 — ==================================================
+2026-04-20 11:57:27 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-20 11:57:27 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-20 11:57:27 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-20 11:57:27 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-20 11:57:27 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-20 11:57:27 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-20 11:57:27 | INFO     | src.vector_store:66 — ChromaDB exists — appending 6 new chunk(s).
+2026-04-20 11:57:31 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 11:57:31 | INFO     | __main__:75 — ==================================================
+2026-04-20 11:57:31 | INFO     | __main__:76 — Ingestion complete!
+2026-04-20 11:57:31 | INFO     | __main__:77 —   Documents loaded : 1
+2026-04-20 11:57:31 | INFO     | __main__:78 —   Chunks stored    : 108
+2026-04-20 11:57:31 | INFO     | __main__:79 —   Next step        : streamlit run app.py
+2026-04-20 11:57:31 | INFO     | __main__:80 — ==================================================
+2026-04-20 11:57:51 | INFO     | src.vector_store:106 — Loaded ChromaDB with 108 stored chunk(s).
+2026-04-20 11:57:51 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-20 11:57:51 | INFO     | src.chain:54 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-20 11:57:51 | INFO     | src.chain:82 — ConversationalRetrievalChain is ready.
+2026-04-20 12:04:10 | INFO     | __main__:60 — ==================================================
+2026-04-20 12:04:10 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-20 12:04:10 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-20 12:04:10 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-20 12:04:10 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-20 12:04:10 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-20 12:04:10 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-20 12:04:10 | INFO     | src.vector_store:66 — ChromaDB exists — appending 6 new chunk(s).
+2026-04-20 12:04:13 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 12:04:13 | INFO     | __main__:75 — ==================================================
+2026-04-20 12:04:13 | INFO     | __main__:76 — Ingestion complete!
+2026-04-20 12:04:13 | INFO     | __main__:77 —   Documents loaded : 1
+2026-04-20 12:04:13 | INFO     | __main__:78 —   Chunks stored    : 114
+2026-04-20 12:04:13 | INFO     | __main__:79 —   Next step        : streamlit run app.py
+2026-04-20 12:04:13 | INFO     | __main__:80 — ==================================================
+2026-04-20 12:04:28 | INFO     | src.vector_store:106 — Loaded ChromaDB with 114 stored chunk(s).
+2026-04-20 12:04:28 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-20 12:04:29 | INFO     | src.chain:54 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-20 12:04:29 | INFO     | src.chain:82 — ConversationalRetrievalChain is ready.
+2026-04-20 12:05:18 | INFO     | __main__:60 — ==================================================
+2026-04-20 12:05:18 | INFO     | __main__:61 — STEP 1/3 — Loading documents…
+2026-04-20 12:05:18 | DEBUG    | src.document_loader:116 —   Loaded 'sample_document.txt' → 1 section(s).
+2026-04-20 12:05:18 | INFO     | src.document_loader:56 — Loaded 1 pages/sections from 1 files.
+2026-04-20 12:05:18 | INFO     | __main__:67 — STEP 2/3 — Splitting into chunks…
+2026-04-20 12:05:18 | INFO     | src.text_splitter:57 — Split 1 document(s) into 6 chunks (size≈500, overlap=100).
+2026-04-20 12:05:18 | INFO     | __main__:70 — STEP 3/3 — Embedding and storing in ChromaDB…
+2026-04-20 12:05:18 | INFO     | src.vector_store:74 — Creating new ChromaDB collection with 6 chunk(s).
+2026-04-20 12:05:21 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 12:05:21 | INFO     | __main__:75 — ==================================================
+2026-04-20 12:05:21 | INFO     | __main__:76 — Ingestion complete!
+2026-04-20 12:05:21 | INFO     | __main__:77 —   Documents loaded : 1
+2026-04-20 12:05:21 | INFO     | __main__:78 —   Chunks stored    : 6
+2026-04-20 12:05:21 | INFO     | __main__:79 —   Next step        : streamlit run app.py
+2026-04-20 12:05:21 | INFO     | __main__:80 — ==================================================
+2026-04-20 12:05:35 | INFO     | src.vector_store:106 — Loaded ChromaDB with 6 stored chunk(s).
+2026-04-20 12:05:35 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-20 12:05:36 | INFO     | src.chain:54 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-20 12:05:36 | INFO     | src.chain:82 — ConversationalRetrievalChain is ready.
+2026-04-20 12:06:05 | DEBUG    | src.document_loader:116 —   Loaded 'DISTELL ESG Appendix 2022.pdf' → 17 section(s).
+2026-04-20 12:06:05 | INFO     | src.text_splitter:57 — Split 17 document(s) into 96 chunks (size≈500, overlap=100).
+2026-04-20 12:06:07 | INFO     | src.vector_store:66 — ChromaDB exists — appending 96 new chunk(s).
+2026-04-20 12:06:11 | INFO     | src.vector_store:82 — Vector store saved to 'chroma_db'.
+2026-04-20 12:06:13 | INFO     | src.vector_store:106 — Loaded ChromaDB with 102 stored chunk(s).
+2026-04-20 12:06:13 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-20 12:06:15 | INFO     | src.chain:54 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-20 12:06:15 | INFO     | src.chain:82 — ConversationalRetrievalChain is ready.
+2026-04-20 12:06:38 | DEBUG    | src.chain:114 — Q: 'Summarise all the uploaded documents' → 4 chunks, sources=['DISTELL ESG Appendix 2022.pdf', 'sample_document.txt']
+2026-04-20 12:11:30 | INFO     | src.vector_store:106 — Loaded ChromaDB with 102 stored chunk(s).
+2026-04-20 12:11:30 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-20 12:11:31 | INFO     | src.chain:54 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-20 12:11:31 | INFO     | src.chain:82 — ConversationalRetrievalChain is ready.
+2026-04-20 12:12:07 | DEBUG    | src.chain:114 — Q: 'What are the key points in the documents?' → 4 chunks, sources=['DISTELL ESG Appendix 2022.pdf']
+2026-04-20 12:15:01 | INFO     | src.vector_store:106 — Loaded ChromaDB with 102 stored chunk(s).
+2026-04-20 12:15:01 | INFO     | src.retriever:38 — Retriever ready — MMR (k=4, fetch_k=8).
+2026-04-20 12:15:03 | INFO     | src.chain:54 — LLM ready — model='gemma3:4b', temp=0.1.
+2026-04-20 12:15:03 | INFO     | src.chain:82 — ConversationalRetrievalChain is ready.

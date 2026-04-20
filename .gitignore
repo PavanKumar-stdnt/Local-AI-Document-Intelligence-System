@@ -1,3 +1,4 @@
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -205,3 +206,46 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+=======
+# ── Python ────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ── Virtual environments ───────────────────────────────────────────
+rag-env/
+venv/
+.venv/
+env/
+rag-envirn
+.env
+chroma_db
+
+# ── Project-specific ──────────────────────────────────────────────
+chroma_db/          # vector store — re-generate with ingest.py
+docs/               # user documents — keep private
+.env                # secrets / config — never commit this
+rag_chatbot.log     # log file
+.env.example
+
+# ── Streamlit ─────────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+# ── IDEs ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Testing ───────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
