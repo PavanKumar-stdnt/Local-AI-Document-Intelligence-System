@@ -226,6 +226,7 @@ env/
 rag-envirn
 .env
 chroma_db
+*.log
 
 # ── Project-specific ──────────────────────────────────────────────
 chroma_db/          # vector store — re-generate with ingest.py
